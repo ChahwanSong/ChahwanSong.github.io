@@ -1,0 +1,14 @@
+.publication-wrapper {
+	margin-bottom: 3rem;
+}
+
+.publication-title {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+.publication-list {
+	font-size: min(max(2.5vw, 1rem), 1.2rem);
+}
+

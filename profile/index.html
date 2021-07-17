@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+	<title>Chahwan's Profile</title>
+</head>
+<body>
+<nav class="top-fixed">
+	<div class="container">
+		<nav class="nav top-status">
+			<a class="top-link active", href="#about" style="text-decoration:none">About</a>
+			<a class="top-link", href="#research" style="text-decoration:none">Research</a>
+			<a class="top-link", href="#publication" style="text-decoration:none">Publication</a>
+			<a class="top-link", href="#miscell" style="text-decoration:none">Miscellaneous</a>
+		</nav>
+	</div>
+</nav>
+
+
+<div class="container">
+	<!-- About me -->
+	<div class="about-wrapper">
+		<div class="about-row">
+			<a class="page-anchor" id="about">&nbsp;</a>
+			<div class="about-picture" id="about-pic">
+				<img src="./image/profile.jpeg">	
+			</div>
+			<div class="about-content">
+				<h1 class="about-me__title style-title">Chahwan Song</h1>
+				<p class="about-me__subtitle style-subtitle">"Stand on the Shoulders of Giants." <br>-  Isaac Newton, 1675</p>
+				<p class="about-me__description style-description">I'm Chahwan, a third year PhD student at Department of Computer Science, National University of Singapore (NUS). It is my great honor to be supervised by Prof. Mun Choon Chan. Before joining NUS, I received my Master's and Bachelor's degree from Department of Mathematics, Yonsei University.</p>	
+				<p class="about-me__contact">
+					Email: songch[at]comp.nus.edu.sg
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Research -->
+	<div class="research-wrapper">
+		<a class="page-anchor" id="research">&nbsp;</a>
+		<h3 class="research-title">Research Projects</h3>
+		
+		<!-- Ongoing Project -->
+		<!-- <div class="resbox">
+			<div class="resbox-header-ongoing">
+				<span class="resbox-header__title">
+					<b>Congestion control in data center network</b>
+					: <i>on-going project</i>
+				</span>
+			</div>
+			<div class="resbox-body">
+				<p class="resbox-body__text">
+					High throughput, low utilization, distributed, proactive, fast convergence...
+				</p>
+			</div>
+		</div> -->
+
+		<!-- FCM-Sketch, CoNEXT20 -->
+		<div class="resbox">
+			<div class="resbox-header-done">
+				<span class="resbox-header__title">
+					<b>FCM-Sketch</b>
+					: lightweight data structure for network measurements
+				</span>
+			</div>
+			<div class="resbox-body">
+				<p class="resbox-body__text">
+					We observe that recent sketches for network measurements consume lots of hardware resources or even unavailable on programmable switches. Typically, most existing data-plane apps use Count-Min sketch by its simplicity albeit its poor accuracy as a trade-off.<br>
+					We propose <i>FCM-Sketch</i>, a probabilistic data structure supporting accurate and generic network measurements such as flow size, cardinality, flow size distribution and entropy. <br>
+					FCM-Sketch has a lightweight implementation on commodity programmable switches (Barefoot Tofino), and we expect FCM-Sketch will be used as a substitute for Count-Min in future data-plane applications.
+				</p>
+				<div class="btn-list">
+					<a class="btn" href="./papers/conext20_fcmsketch.pdf" style="text-decoration:none" role="button">
+						<i class="fas fa-scroll"></i>
+						<span class="btn__text">
+							Paper (CoNEXT'20)
+						</span>
+					</a>
+					<a class="btn" href="https://github.com/fcm-project/simulator" style="text-decoration:none" role="button">
+						<i class="fas fa-code"></i>
+						<span class="btn__text">
+							Simulator
+						</span>
+					</a>
+					<a class="btn" href="https://github.com/fcm-project/fcm_p4" style="text-decoration:none" role="button">
+						<i class="fas fa-code"></i>
+						<span class="btn__text">
+							P4 Code
+						</span>
+					</a>
+					<a class="btn" href="./videos/FCM_CoNEXT20.mp4" style="text-decoration:none" role="button">
+						<i class="fas fa-video"></i>
+						<span class="btn__text">
+							Video
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	
+	<!-- Research -->
+	<div class="publication-wrapper">
+		<a class="page-anchor" id="publication">&nbsp;</a>
+		<h3 class="publication-title">Publication</h3>
+		<div class="publication-list">
+			<ul>
+				<li>
+					<b>[CoNEXT'20]</b>
+					<a target="_blank" href="https://www.comp.nus.edu.sg/~songch/papers/conext20_fcmsketch.pdf">
+						<b> FCM-Sketch: Generic Network Measurements with Data Plane Support. </b>
+					</a>
+					<br> Cha Hwan Song, Pravein Govindan Kannan, Bryan Kian Hsiang Low, Mun Choon Chan
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+<!--	<div class="content-publication"></div>
+		<div class="miscell"></div> -->
+</div>
+<script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

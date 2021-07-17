@@ -1,0 +1,53 @@
+.top-fixed {
+	margin-bottom: 3rem;
+	background-color: rgb(88, 137, 255);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1001;
+}
+
+.top-status {
+	font-size: min(max(2vw, 15px), 20px);
+	padding: .5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.top-link {
+	position: relative;
+	color: #d0ecfd;
+	opacity: 0.5;
+	padding: .5rem 1.5rem;
+	font-weight: 600;
+}
+
+@media (max-width: 650px){
+	.top-link {
+		position: relative;
+		color: #d0ecfd;
+		opacity: 0.5;
+		margin-left: 1rem;
+		padding: .5rem .5rem;
+		font-weight: 600;
+	}
+	.top-status {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+.top-link:hover, .top-link:focus{
+	color: #fff;
+	opacity: 1;
+	border-bottom: 0;
+}
+
+.top-link.active {
+ 	color: #fff;
+ 	opacity: 1;
+}
+
+
