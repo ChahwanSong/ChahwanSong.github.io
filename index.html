@@ -38,7 +38,7 @@
 			<div class="about-content">
 				<h1 class="about-me__title style-title">Chahwan Song</h1>
 				<p class="about-me__subtitle style-subtitle">"Stand on the Shoulders of Giants." <br>-  Isaac Newton, 1675</p>
-				<p class="about-me__description style-description">I'm Chahwan, 4th year PhD student at Department of Computer Science, National University of Singapore (NUS). It is my great honor to be supervised by Prof. Mun Choon Chan. Before joining NUS, I received my Master's and Bachelor's degree from Department of Mathematics, Yonsei University.</p>	
+				<p class="about-me__description style-description">I'm Chahwan, 5th year PhD student at Department of Computer Science, National University of Singapore (NUS). It is my great honor to be supervised by Prof. Mun Choon Chan. Before joining NUS, I received my Master's and Bachelor's degree from Department of Mathematics, Yonsei University.</p>	
 				<p class="about-me__contact">
 					Email: songch[at]comp.nus.edu.sg
 				</p>
@@ -65,6 +65,47 @@
 				</p>
 			</div>
 		</div> -->
+		
+		<!-- DySO, IFIP22 -->
+		<div class="resbox">
+			<div class="resbox-header-done">
+				<span class="resbox-header__title">
+					<b>DySO</b>
+					: revisiting application offloads on programmable switches
+				</span>
+			</div>
+			<div class="resbox-body">
+				<p class="resbox-body__text">
+					Application offloads on modern high-speed programmable switches have been proposed in a variety of systems (e.g., key-value store systems and network middleboxes) so as to efficiently scale up the traditional server-oriented deployments.
+					However, they largely achieve sub-optimal offloading efficiency due to the lack of (1) capability to perform control actions at sufficient rates, and (2) adaptability to workload changes.
+
+					<br> In this project, we scrutinize the common stumbling blocks of existing frameworks with performance evaluations on real workloads.
+					We present DySO (Dynamic State Offloading), a framework which enables expeditious on-demand control actions and self-tuning of management rules.
+					Our software simulations show up to 100% performance improvement compared to existing systems for various real world traces.
+					On top of that, we implement and evaluate DySO on a commodity programmable switch, showing two orders of magnitude faster responsiveness to sudden workload changes compared to the existing systems.
+				</p>
+				<div class="btn-list">
+					<a class="btn" href="./papers/DySO_IFIP2022.pdf" style="text-decoration:none" role="button">
+						<i class="fas fa-scroll"></i>
+						<span class="btn__text">
+							Paper (IFIP'22)
+						</span>
+					</a>
+					<a class="btn" href="https://github.com/dyso-project/dyso_p4" style="text-decoration:none" role="button">
+						<i class="fas fa-code"></i>
+						<span class="btn__text">
+							P4 Code
+						</span>
+					</a>
+					<a class="btn" href="./materials/DySO_IFIP22.mp4" style="text-decoration:none" role="button">
+						<i class="fas fa-video"></i>
+						<span class="btn__text">
+							Video
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<!-- FCM-Sketch, CoNEXT20 -->
 		<div class="resbox">
@@ -77,7 +118,7 @@
 			<div class="resbox-body">
 				<p class="resbox-body__text">
 					We observe that recent sketches for network measurements consume lots of hardware resources or even unavailable on programmable switches. Typically, most existing data-plane apps use Count-Min sketch by its simplicity albeit its poor accuracy as a trade-off.<br>
-					We propose <i>FCM-Sketch</i>, a probabilistic data structure supporting accurate and generic network measurements such as flow size, cardinality, flow size distribution and entropy. <br>
+					We propose <i>FCM-Sketch</i>, a probabilistic data structure supporting accurate and generic network measurements such as flow size, cardinality, flow size distribution and entropy.
 					FCM-Sketch has a lightweight implementation on commodity programmable switches (Barefoot Tofino), and we expect FCM-Sketch will be used as a substitute for Count-Min in future data-plane applications.
 				</p>
 				<div class="btn-list">
@@ -99,7 +140,7 @@
 							P4 Code
 						</span>
 					</a>
-					<a class="btn" href="./videos/FCM_CoNEXT20.mp4" style="text-decoration:none" role="button">
+					<a class="btn" href="./materials/FCM_CoNEXT20.mp4" style="text-decoration:none" role="button">
 						<i class="fas fa-video"></i>
 						<span class="btn__text">
 							Video
@@ -117,11 +158,27 @@
 		<div class="publication-list">
 			<ul>
 				<li>
+					<b>[IFIP'22]</b>
+					<a target="_blank" href="https://networking.ifip.org/2022/index.php/program">
+						<b> Revisiting Application Offloads on Programmable Switches. </b>
+					</a>
+					<br> <u>Cha Hwan Song</u>, Xin Zhe Khooi, Dinil Mon Divakaran, Mun Choon Chan
+				</li>
+
+				<li>
+					<b>[ANCS'22]</b>
+					<a target="_blank" href="https://dl.acm.org/doi/10.1145/3493425.3502766">
+						<b> Towards a Framework for One-sided RDMA Multicast. </b>
+					</a>
+					<br> Xin Zhe Khooi, <u>Cha Hwan Song</u>, Mun Choon Chan
+				</li>
+
+				<li>
 					<b>[CoNEXT'20]</b>
-					<a target="_blank" href="https://www.comp.nus.edu.sg/~songch/papers/conext20_fcmsketch.pdf">
+					<a target="_blank" href="https://dl.acm.org/doi/10.1145/3386367.3432729">
 						<b> FCM-Sketch: Generic Network Measurements with Data Plane Support. </b>
 					</a>
-					<br> Cha Hwan Song, Pravein Govindan Kannan, Bryan Kian Hsiang Low, Mun Choon Chan
+					<br> <u>Cha Hwan Song</u>, Pravein Govindan Kannan, Bryan Kian Hsiang Low, Mun Choon Chan
 				</li>
 			</ul>
 		</div>
